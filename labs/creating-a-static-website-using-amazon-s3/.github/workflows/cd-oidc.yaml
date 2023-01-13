@@ -3,7 +3,7 @@ name: Deploy site to production bucket
 on:
   push:
     branches:
-      - master
+      - main
       
 permissions:
   id-token: write 
