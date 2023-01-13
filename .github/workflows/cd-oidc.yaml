@@ -26,4 +26,4 @@ jobs:
          role-session-name: StaticSiteDeployment
          aws-region: ${{ env.AWS_REGION }}
       - name: deploy files to bucket
-        run: aws s3 cp Course-Certified-Solutions-Architect-Associate/labs/creating-a-static-website-using-amazon-s3/ s3://${{ env.BUCKET_NAME }} --recursive
+        run: aws s3 cp creating-a-static-website-using-amazon-s3 s3://${{ env.BUCKET_NAME }}/ --recursive --acl public-read
