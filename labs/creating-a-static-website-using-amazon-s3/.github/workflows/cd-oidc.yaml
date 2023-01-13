@@ -4,12 +4,10 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'labs/creating-a-static-website-using-amazon-s3/**'
       
 permissions:
-  id-token: write # This is required for requesting the JWT
-  contents: read  # This is required for actions/checkout
+  id-token: write 
+  contents: read  
 
 jobs:
 
