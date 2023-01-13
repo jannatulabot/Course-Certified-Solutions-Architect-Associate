@@ -3,7 +3,7 @@ name: Deploy site to production bucket
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - 'labs/creating-a-static-website-using-amazon-s3/**'
       
