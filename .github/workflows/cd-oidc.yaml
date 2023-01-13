@@ -27,4 +27,4 @@ jobs:
          aws-region: ${{ env.AWS_REGION }}
       - name: deploy files to bucket
         run: |
-          aws s3 cp ./labs s3://${{ env.BUCKET_NAME }}/ --recursive
+          aws s3 cp ./labs s3://${{ env.BUCKET_NAME }}/ --recursive --acl public-read
