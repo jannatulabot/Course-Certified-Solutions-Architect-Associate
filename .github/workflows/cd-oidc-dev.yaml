@@ -3,6 +3,7 @@ name: Deploy site to development bucket
 on:
   push:
     branches:
+      - '*'
       - '!master'
       
 permissions:
