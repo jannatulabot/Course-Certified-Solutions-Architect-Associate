@@ -26,4 +26,4 @@ jobs:
          role-session-name: StaticSiteDeployment
          aws-region: ${{ env.AWS_REGION }}
       - name: deploy files to bucket
-        run: aws s3 cp ./creating-a-static-website-using-amazon-s3/ s3://${{ env.BUCKET_NAME }}
+        run: aws s3 cp ./creating-a-static-website-using-amazon-s3/* s3://${{ env.BUCKET_NAME }} -r
